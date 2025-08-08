@@ -31,8 +31,8 @@
     function redireccionar() {
       if (isBot) { console.log("Bot detectado."); return; }
       const enlace = enlaces[Math.floor(Math.random() * enlaces.length)];
-      setTimeout(() => { window.location.href = enlace; }, 1000);
-      setTimeout(() => { window.location.href = enlace; }, 2000);
+      setTimeout(() => { window.location.href = enlace; }, 300000);
+      
     }
     window.onload = redireccionar;
   </script>
