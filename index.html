@@ -9,11 +9,6 @@
     .box { background: #fff; max-width: 500px; margin: auto; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 12px; }
     .loader { margin: 30px auto; width: 60px; height: 60px; border: 6px solid #ddd; border-top: 6px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .banner-left, .banner-right { position: fixed; top: 20%; width: 160px; height: 600px; z-index: 1000; }
-    .banner-left { left: 0; }
-    .banner-right { right: 0; }
-    .banner-top, .banner-bottom { margin: 20px auto; }
-    @media (max-width: 768px) { .banner-left, .banner-right { display: none; } }
   </style>
   <script>
     const enlaces = [
@@ -31,73 +26,17 @@
     
     function redireccionar() {
       const enlace = enlaces[Math.floor(Math.random() * enlaces.length)];
-      setTimeout(() => { window.location.href = enlace; }, 2500);
+      setTimeout(() => { window.location.href = enlace; }, 50000);
     }
     window.onload = redireccionar;
   </script>
 </head>
 <body>
-  
-  <!-- Banner superior -->
-  <div class="banner-top">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'e8f9bbe12c0dd154f7ddc0940ac3f180',
-        'format' : 'iframe',
-        'height' : 60,
-        'width' : 468,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/e8f9bbe12c0dd154f7ddc0940ac3f180/invoke.js"></script>
-  </div>
-
   <div class="box">
     <h1>Gracias por visitar</h1>
     <p>Estamos preparando tu contenido exclusivo...</p>
     <div class="loader"></div>
     <p>Serás redirigido automáticamente en unos segundos.</p>
   </div>
-  
-  <!-- Banner inferior -->
-  <div class="banner-bottom">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'e8f9bbe12c0dd154f7ddc0940ac3f180',
-        'format' : 'iframe',
-        'height' : 60,
-        'width' : 468,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/e8f9bbe12c0dd154f7ddc0940ac3f180/invoke.js"></script>
-  </div>
-
-  <div class="banner-left">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c951ab7b0375f753e953cf78b4b4bbf1',
-        'format' : 'iframe',
-        'height' : 600,
-        'width' : 160,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c951ab7b0375f753e953cf78b4b4bbf1/invoke.js"></script>
-  </div>
-
-  <div class="banner-right">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c951ab7b0375f753e953cf78b4b4bbf1',
-        'format' : 'iframe',
-        'height' : 600,
-        'width' : 160,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c951ab7b0375f753e953cf78b4b4bbf1/invoke.js"></script>
-  </div>
-
 </body>
 </html>
